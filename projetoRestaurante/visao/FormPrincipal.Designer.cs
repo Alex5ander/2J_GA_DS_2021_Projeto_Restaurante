@@ -39,6 +39,7 @@
             // 
             // menu
             // 
+            this.menu.BackColor = System.Drawing.SystemColors.Control;
             this.menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnProdutos,
@@ -82,6 +83,7 @@
             this.mnSair.Size = new System.Drawing.Size(85, 35);
             this.mnSair.Text = "SAIR";
             this.mnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.mnSair.Click += new System.EventHandler(this.mnSair_Click);
             // 
             // FormPrincipal
             // 

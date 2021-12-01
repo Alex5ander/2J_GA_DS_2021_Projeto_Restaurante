@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace projetoRestaurante.visao
 {
-    public partial class FormPrincipal : Form
+    public partial class FormProduto : Form
     {
-        public FormPrincipal()
+        public FormProduto()
         {
             InitializeComponent();
-        }
-
-        private void mnSair_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
