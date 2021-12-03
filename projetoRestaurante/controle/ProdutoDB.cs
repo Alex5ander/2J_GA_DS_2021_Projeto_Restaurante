@@ -54,5 +54,33 @@ namespace projetoRestaurante.controle
             }
         }
 
+        public int ProximoCodigo()
+        {
+            int cod = 0;
+            using (var banco = new modelo.restaurantedbEntidades())
+            {
+                banco.Database.Connection.ConnectionString = con;
+                try
+                {
+                    return banco.produto.Max(i => i.idproduto) + 1;
+                }
+                catch (Exception)
+                {
+                    cod = 1;
+                }
+            }
+            return cod;
+        }
+
+        public object pesquisar(int cod)
+        {
+            using (var banco = new modelo.restaurantedbEntidades())
+            {
+                banco.Database.Connection.ConnectionString = con;
+                var query = (from linha in banco.produto where linha.idproduto == cod select linha).First();
+                return (modelo.produto) query;
+            }
+        }
+
     }
 }
