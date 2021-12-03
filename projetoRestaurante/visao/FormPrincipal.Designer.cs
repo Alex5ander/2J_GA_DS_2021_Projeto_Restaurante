@@ -48,7 +48,7 @@
             this.mnSair});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(98, 261);
+            this.menu.Size = new System.Drawing.Size(85, 381);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
             // 
@@ -56,7 +56,7 @@
             // 
             this.mnProdutos.Image = ((System.Drawing.Image)(resources.GetObject("mnProdutos.Image")));
             this.mnProdutos.Name = "mnProdutos";
-            this.mnProdutos.Size = new System.Drawing.Size(85, 35);
+            this.mnProdutos.Size = new System.Drawing.Size(72, 35);
             this.mnProdutos.Text = "PRODUTOS";
             this.mnProdutos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.mnProdutos.Click += new System.EventHandler(this.mnProdutos_Click);
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(331, 261);
+            this.ClientSize = new System.Drawing.Size(851, 381);
             this.Controls.Add(this.menu);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;

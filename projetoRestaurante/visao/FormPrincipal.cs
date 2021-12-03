@@ -17,7 +17,7 @@ namespace projetoRestaurante.visao
             InitializeComponent();
         }
 
-        public FormProduto frProduto;
+        public FormProduto frProduto = null;
 
         private void mnSair_Click(object sender, EventArgs e)
         {
@@ -32,7 +32,6 @@ namespace projetoRestaurante.visao
                 frProduto.MdiParent = this;
                 frProduto.Location = new Point(0, 0);
                 frProduto.Show();
-             
             }
         }
 

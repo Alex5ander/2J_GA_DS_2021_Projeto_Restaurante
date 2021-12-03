@@ -74,7 +74,7 @@
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTop.Location = new System.Drawing.Point(0, 0);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(547, 178);
+            this.pnTop.Size = new System.Drawing.Size(801, 178);
             this.pnTop.TabIndex = 0;
             // 
             // panel2
@@ -87,7 +87,7 @@
             this.panel2.Location = new System.Drawing.Point(161, 21);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(8);
-            this.panel2.Size = new System.Drawing.Size(386, 157);
+            this.panel2.Size = new System.Drawing.Size(640, 157);
             this.panel2.TabIndex = 6;
             // 
             // lbTipo
@@ -96,7 +96,7 @@
             this.lbTipo.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbTipo.Location = new System.Drawing.Point(8, 47);
             this.lbTipo.Name = "lbTipo";
-            this.lbTipo.Size = new System.Drawing.Size(370, 13);
+            this.lbTipo.Size = new System.Drawing.Size(624, 13);
             this.lbTipo.TabIndex = 3;
             // 
             // lbPreco
@@ -105,7 +105,7 @@
             this.lbPreco.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbPreco.Location = new System.Drawing.Point(8, 34);
             this.lbPreco.Name = "lbPreco";
-            this.lbPreco.Size = new System.Drawing.Size(370, 13);
+            this.lbPreco.Size = new System.Drawing.Size(624, 13);
             this.lbPreco.TabIndex = 2;
             // 
             // lbProduto
@@ -114,7 +114,7 @@
             this.lbProduto.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbProduto.Location = new System.Drawing.Point(8, 21);
             this.lbProduto.Name = "lbProduto";
-            this.lbProduto.Size = new System.Drawing.Size(370, 13);
+            this.lbProduto.Size = new System.Drawing.Size(624, 13);
             this.lbProduto.TabIndex = 1;
             // 
             // lbId
@@ -124,7 +124,7 @@
             this.lbId.Location = new System.Drawing.Point(8, 8);
             this.lbId.Margin = new System.Windows.Forms.Padding(0);
             this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(370, 13);
+            this.lbId.Size = new System.Drawing.Size(624, 13);
             this.lbId.TabIndex = 0;
             // 
             // panel1
@@ -182,7 +182,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(547, 21);
+            this.label1.Size = new System.Drawing.Size(801, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "LISTA DE PRODUTOS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -208,14 +208,14 @@
             this.btnEditar,
             this.btnExcluir,
             this.btnPesquisar});
-            this.bn.Location = new System.Drawing.Point(0, 236);
+            this.bn.Location = new System.Drawing.Point(0, 461);
             this.bn.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bn.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bn.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.bn.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bn.Name = "bn";
             this.bn.PositionItem = this.bindingNavigatorPositionItem;
-            this.bn.Size = new System.Drawing.Size(547, 25);
+            this.bn.Size = new System.Drawing.Size(801, 25);
             this.bn.TabIndex = 1;
             this.bn.Text = "bindingNavigator1";
             // 
@@ -322,17 +322,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 261);
+            this.ClientSize = new System.Drawing.Size(801, 486);
             this.Controls.Add(this.bn);
             this.Controls.Add(this.pnTop);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FormProduto";
             this.ShowIcon = false;
             this.Text = "CADASTRO DE PRODUTOS";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormProduto_FormClosing);
+            this.Load += new System.EventHandler(this.FormProduto_Load);
             this.pnTop.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
