@@ -59,6 +59,7 @@
             this.mnProdutos.Size = new System.Drawing.Size(85, 35);
             this.mnProdutos.Text = "PRODUTOS";
             this.mnProdutos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.mnProdutos.Click += new System.EventHandler(this.mnProdutos_Click);
             // 
             // mnMesas
             // 
