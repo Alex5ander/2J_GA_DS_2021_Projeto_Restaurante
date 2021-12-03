@@ -22,5 +22,26 @@ namespace projetoRestaurante.controle
             }
         }
 
+        public void inserir(modelo.produto reg)
+        {
+            using (var banco = new modelo.restaurantedbEntidades())
+            {
+                banco.Database.Connection.ConnectionString = con;
+                banco.produto.Add(reg);
+                banco.SaveChanges();
+            }
+        }
+
+        public void editar(modelo.produto reg)
+        {
+            using (var banco = new modelo.restaurantedbEntidades())
+            {
+                banco.Database.Connection.ConnectionString = con;
+                modelo.produto Velho = banco.produto.First(i => i.idproduto == reg.idproduto);
+                banco.Entry(Velho).CurrentValues.SetValues(reg);
+                banco.SaveChanges();
+            }
+        }
+
     }
 }
