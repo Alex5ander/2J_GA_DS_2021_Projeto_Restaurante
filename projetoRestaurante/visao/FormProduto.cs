@@ -16,5 +16,11 @@ namespace projetoRestaurante.visao
         {
             InitializeComponent();
         }
+
+        private void FormProduto_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormPrincipal pai = (FormPrincipal)this.MdiParent;
+            pai.frProduto = null;
+        }
     }
 }

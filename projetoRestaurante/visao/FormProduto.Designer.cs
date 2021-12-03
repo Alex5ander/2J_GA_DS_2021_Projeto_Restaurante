@@ -31,35 +31,35 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProduto));
             this.pnTop = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lbId = new System.Windows.Forms.Label();
-            this.lbProduto = new System.Windows.Forms.Label();
-            this.lbPreco = new System.Windows.Forms.Label();
             this.lbTipo = new System.Windows.Forms.Label();
+            this.lbPreco = new System.Windows.Forms.Label();
+            this.lbProduto = new System.Windows.Forms.Label();
+            this.lbId = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.bn = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bs = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bs = new System.Windows.Forms.BindingSource(this.components);
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.btnPesquisar = new System.Windows.Forms.ToolStripButton();
             this.pnTop.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bn)).BeginInit();
             this.bn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bs)).BeginInit();
@@ -77,16 +77,55 @@
             this.pnTop.Size = new System.Drawing.Size(547, 178);
             this.pnTop.TabIndex = 0;
             // 
-            // label1
+            // panel2
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(547, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "LISTA DE PRODUTOS";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel2.Controls.Add(this.lbTipo);
+            this.panel2.Controls.Add(this.lbPreco);
+            this.panel2.Controls.Add(this.lbProduto);
+            this.panel2.Controls.Add(this.lbId);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(161, 21);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(8);
+            this.panel2.Size = new System.Drawing.Size(386, 157);
+            this.panel2.TabIndex = 6;
+            // 
+            // lbTipo
+            // 
+            this.lbTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lbTipo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbTipo.Location = new System.Drawing.Point(8, 47);
+            this.lbTipo.Name = "lbTipo";
+            this.lbTipo.Size = new System.Drawing.Size(370, 13);
+            this.lbTipo.TabIndex = 3;
+            // 
+            // lbPreco
+            // 
+            this.lbPreco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lbPreco.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbPreco.Location = new System.Drawing.Point(8, 34);
+            this.lbPreco.Name = "lbPreco";
+            this.lbPreco.Size = new System.Drawing.Size(370, 13);
+            this.lbPreco.TabIndex = 2;
+            // 
+            // lbProduto
+            // 
+            this.lbProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lbProduto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbProduto.Location = new System.Drawing.Point(8, 21);
+            this.lbProduto.Name = "lbProduto";
+            this.lbProduto.Size = new System.Drawing.Size(370, 13);
+            this.lbProduto.TabIndex = 1;
+            // 
+            // lbId
+            // 
+            this.lbId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lbId.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbId.Location = new System.Drawing.Point(8, 8);
+            this.lbId.Margin = new System.Windows.Forms.Padding(0);
+            this.lbId.Name = "lbId";
+            this.lbId.Size = new System.Drawing.Size(370, 13);
+            this.lbId.TabIndex = 0;
             // 
             // panel1
             // 
@@ -101,23 +140,14 @@
             this.panel1.Size = new System.Drawing.Size(161, 157);
             this.panel1.TabIndex = 5;
             // 
-            // label2
+            // label5
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Location = new System.Drawing.Point(8, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "ID DO PRODUTO:";
-            // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label4.Location = new System.Drawing.Point(8, 21);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "NOME DO PRODUTO:";
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label5.Location = new System.Drawing.Point(8, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(145, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "TIPO DO PRODUTO:";
             // 
             // label3
             // 
@@ -128,64 +158,34 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "PREÇO DO PRODUTO:";
             // 
-            // label5
+            // label4
             // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Location = new System.Drawing.Point(8, 47);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "TIPO DO PRODUTO:";
+            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label4.Location = new System.Drawing.Point(8, 21);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(145, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "NOME DO PRODUTO:";
             // 
-            // panel2
+            // label2
             // 
-            this.panel2.Controls.Add(this.lbTipo);
-            this.panel2.Controls.Add(this.lbPreco);
-            this.panel2.Controls.Add(this.lbProduto);
-            this.panel2.Controls.Add(this.lbId);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(161, 21);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(8);
-            this.panel2.Size = new System.Drawing.Size(386, 157);
-            this.panel2.TabIndex = 6;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Location = new System.Drawing.Point(8, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "ID DO PRODUTO:";
             // 
-            // lbId
+            // label1
             // 
-            this.lbId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lbId.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbId.Location = new System.Drawing.Point(8, 8);
-            this.lbId.Margin = new System.Windows.Forms.Padding(0);
-            this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(370, 13);
-            this.lbId.TabIndex = 0;
-            // 
-            // lbProduto
-            // 
-            this.lbProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lbProduto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbProduto.Location = new System.Drawing.Point(8, 21);
-            this.lbProduto.Name = "lbProduto";
-            this.lbProduto.Size = new System.Drawing.Size(370, 13);
-            this.lbProduto.TabIndex = 1;
-            // 
-            // lbPreco
-            // 
-            this.lbPreco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lbPreco.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbPreco.Location = new System.Drawing.Point(8, 34);
-            this.lbPreco.Name = "lbPreco";
-            this.lbPreco.Size = new System.Drawing.Size(370, 13);
-            this.lbPreco.TabIndex = 2;
-            // 
-            // lbTipo
-            // 
-            this.lbTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lbTipo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbTipo.Location = new System.Drawing.Point(8, 47);
-            this.lbTipo.Name = "lbTipo";
-            this.lbTipo.Size = new System.Drawing.Size(370, 13);
-            this.lbTipo.TabIndex = 3;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(547, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "LISTA DE PRODUTOS";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bn
             // 
@@ -219,6 +219,13 @@
             this.bn.TabIndex = 1;
             this.bn.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -251,16 +258,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -283,7 +283,7 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // btnNovo
@@ -332,9 +332,10 @@
             this.ShowIcon = false;
             this.Text = "CADASTRO DE PRODUTOS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormProduto_FormClosing);
             this.pnTop.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bn)).EndInit();
             this.bn.ResumeLayout(false);
             this.bn.PerformLayout();
