@@ -38,7 +38,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textPreco = new System.Windows.Forms.TextBox();
+            this.txtPreco = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbTipo = new System.Windows.Forms.ComboBox();
@@ -116,6 +116,7 @@
             this.btnGravar.Text = "GRAVAR";
             this.btnGravar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnCancelar
             // 
@@ -154,13 +155,13 @@
             this.panel2.Size = new System.Drawing.Size(740, 368);
             this.panel2.TabIndex = 8;
             // 
-            // textPreco
+            // txtPreco
             // 
-            this.textPreco.Location = new System.Drawing.Point(318, 26);
-            this.textPreco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textPreco.Name = "textPreco";
-            this.textPreco.Size = new System.Drawing.Size(409, 21);
-            this.textPreco.TabIndex = 6;
+            this.txtPreco.Location = new System.Drawing.Point(318, 26);
+            this.txtPreco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.Size = new System.Drawing.Size(409, 21);
+            this.txtPreco.TabIndex = 6;
             // 
             // panel3
             // 
@@ -175,7 +176,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.textPreco);
+            this.panel4.Controls.Add(this.txtPreco);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 61);
             this.panel4.Name = "panel4";
@@ -212,6 +213,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormFichaProduto";
             this.Text = "FormFichaProduto";
+            this.Load += new System.EventHandler(this.FormFichaProduto_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -237,7 +239,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ComboBox cbTipo;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textPreco;
+        private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Panel panel3;
     }
 }

@@ -24,5 +24,50 @@ namespace projetoRestaurante.visao
             Registro = null;
             this.Dispose();
         }
+
+        private void btnGravar_Click(object sender, EventArgs e)
+        {
+            if (Registro == null) novo();
+            else editar();
+            this.Dispose();
+        }
+
+        private void novo()
+        {
+            controle.ProdutoDB tabela = new controle.ProdutoDB();
+            Registro = new modelo.produto()
+            {
+                idproduto = tabela.ProximoCodigo(),
+                nome = txtNome.Text.ToUpper(),
+                preco = Double.Parse(txtPreco.Text),
+                idtipo = Int16.Parse(cbTipo.SelectedValue.ToString())
+            };
+
+            tabela.inserir(Registro);
+        }
+
+        private void editar()
+        {
+            controle.ProdutoDB tabela = new controle.ProdutoDB();
+            Registro = new modelo.produto()
+            {
+                nome = txtNome.Text.ToUpper(),
+                preco = Double.Parse(txtPreco.Text),
+                idtipo = Int16.Parse(cbTipo.SelectedValue.ToString()),
+            };
+
+            tabela.editar(Registro);
+        }
+
+        private void FormFichaProduto_Load(object sender, EventArgs e)
+        {
+            if (Registro != null)
+            {
+                this.Text = "FICHA NÚMERO " + Registro.idproduto;
+                txtNome.Text = Registro.nome;
+                txtPreco.Text = Registro.preco.ToString();
+                cbTipo.SelectedValue = Registro.tipo.ToString();
+            }
+        }
     }
 }
