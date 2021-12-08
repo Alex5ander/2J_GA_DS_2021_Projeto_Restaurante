@@ -41,5 +41,16 @@ namespace projetoRestaurante.controle
                 banco.SaveChanges();
             }
         }
+
+        public void excluir(modelo.tipo reg)
+        {
+            using (var banco = new modelo.restaurantedbEntidades())
+            {
+                banco.Database.Connection.ConnectionString = con;
+                modelo.tipo Velho = banco.tipo.First(i => i.idtipo == reg.idtipo);
+                banco.tipo.Remove(Velho);
+                banco.SaveChanges();
+            }
+        }
     }
 }
