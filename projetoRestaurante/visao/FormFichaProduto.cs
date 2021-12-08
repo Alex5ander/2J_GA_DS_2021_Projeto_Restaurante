@@ -55,7 +55,7 @@ namespace projetoRestaurante.visao
                 preco = Double.Parse(txtPreco.Text),
                 idtipo = Int16.Parse(cbTipo.SelectedValue.ToString()),
             };
-
+            Registro.tipo.descricao = cbTipo.Text;
             tabela.editar(Registro);
         }
 
@@ -71,7 +71,7 @@ namespace projetoRestaurante.visao
                 this.Text = "FICHA NÚMERO " + Registro.idproduto;
                 txtNome.Text = Registro.nome;
                 txtPreco.Text = Registro.preco.ToString();
-                cbTipo.SelectedValue = Registro.tipo.ToString();
+                cbTipo.SelectedValue = Registro.idtipo;
             }
         }
     }

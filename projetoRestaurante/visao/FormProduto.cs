@@ -35,5 +35,31 @@ namespace projetoRestaurante.visao
             lbPreco.DataBindings.Add(new Binding("Text", bs, "preco"));
             lbTipo.DataBindings.Add(new Binding("Text", bs, "tipo.descricao"));
         }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            FormFichaProduto ficha = new FormFichaProduto();
+            ficha.Registro = null;
+            ficha.ShowDialog();
+            if (ficha.Registro != null)
+            {
+                controle.ProdutoDB tabela = new controle.ProdutoDB();
+                modelo.produto p = (modelo.produto) tabela.pesquisar(ficha.Registro.idproduto);
+                bs.Add(p);
+                bs.ResetBindings(false);
+                bs.MoveLast();
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            FormFichaProduto ficha = new FormFichaProduto();
+            ficha.Registro = (modelo.produto) bs.Current;
+            ficha.ShowDialog();
+            if (ficha.Registro != null)
+            {   
+                bs.ResetBindings(false);
+            }
+        }
     }
 }
