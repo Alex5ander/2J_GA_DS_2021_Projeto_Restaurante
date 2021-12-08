@@ -61,6 +61,11 @@ namespace projetoRestaurante.visao
 
         private void FormFichaProduto_Load(object sender, EventArgs e)
         {
+            controle.TipoDB tabela = new controle.TipoDB();
+            cbTipo.DataSource = tabela.selectAll();
+            cbTipo.ValueMember = "idtipo";
+            cbTipo.DisplayMember = "descricao";
+            
             if (Registro != null)
             {
                 this.Text = "FICHA NÚMERO " + Registro.idproduto;
