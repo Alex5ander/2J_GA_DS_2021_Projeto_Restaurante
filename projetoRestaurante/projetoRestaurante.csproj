@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="controle\Conexao.cs" />
     <Compile Include="controle\ProdutoDB.cs" />
+    <Compile Include="controle\TipoDB.cs" />
     <Compile Include="modelo\cardapio.cs">
       <DependentUpon>restaurantedb.tt</DependentUpon>
     </Compile>
