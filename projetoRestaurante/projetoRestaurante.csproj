@@ -102,6 +102,12 @@
     <Compile Include="visao\FormFichaProduto.Designer.cs">
       <DependentUpon>FormFichaProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="visao\FormPesquisarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visao\FormPesquisarProduto.Designer.cs">
+      <DependentUpon>FormPesquisarProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="visao\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </Compile>
     <EmbeddedResource Include="visao\FormFichaProduto.resx">
       <DependentUpon>FormFichaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visao\FormPesquisarProduto.resx">
+      <DependentUpon>FormPesquisarProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="visao\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>

@@ -321,6 +321,7 @@
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(87, 22);
             this.btnPesquisar.Text = "PESQUISAR";
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // FormProduto
             // 
