@@ -79,7 +79,8 @@ namespace projetoRestaurante.visao
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-
+            FormPesquisarProduto pesquisa = new FormPesquisarProduto();
+            pesquisa.ShowDialog();
         }
     }
 }
