@@ -28,7 +28,11 @@ namespace projetoRestaurante.controle
             {
                 banco.Database.Connection.ConnectionString = con;
 
-                var query = from linhas in banco.produto where linhas.nome.StartsWith(nome) select linhas;
+                var query = from linhas in banco.produto where linhas.nome.StartsWith(nome)
+                            select new {
+                                Codigo = linhas.idproduto,
+                                Descricao = linhas.nome
+                            };
                 return query.ToList();
             }
         }
