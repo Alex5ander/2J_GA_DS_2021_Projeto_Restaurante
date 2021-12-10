@@ -24,5 +24,14 @@ namespace projetoRestaurante.visao
             dgvLista.DataSource = tabela.pesquisarNome(txtNome.Text);
             dgvLista.AutoResizeColumns();
         }
+
+        private void btnAbrir_Click(object sender, EventArgs e)
+        {
+            if(dgvLista.Rows.Count != 0)
+            {
+                Cod = Int16.Parse(dgvLista.CurrentRow.Cells["Codigo"].Value.ToString());
+                this.Dispose();
+            }
+        }
     }
 }
