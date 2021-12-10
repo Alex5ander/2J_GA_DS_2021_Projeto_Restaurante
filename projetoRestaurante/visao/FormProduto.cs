@@ -81,6 +81,13 @@ namespace projetoRestaurante.visao
         {
             FormPesquisarProduto pesquisa = new FormPesquisarProduto();
             pesquisa.ShowDialog();
+            if(pesquisa.Cod != 0)
+            {
+                controle.ProdutoDB tabela = new controle.ProdutoDB();
+                modelo.produto p = (modelo.produto) tabela.pesquisar(pesquisa.Cod);
+                bs.Position = bs.IndexOf(p);
+                btnEditar_Click(sender, e);
+            }
         }
     }
 }
