@@ -253,6 +253,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posição";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -300,7 +301,7 @@
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(65, 22);
+            this.btnEditar.Size = new System.Drawing.Size(64, 22);
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
@@ -311,6 +312,7 @@
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(72, 22);
             this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnPesquisar
             // 

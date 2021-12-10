@@ -61,5 +61,20 @@ namespace projetoRestaurante.visao
                 bs.ResetBindings(false);
             }
         }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            DialogResult op;
+            modelo.produto p = (modelo.produto)bs.Current;
+            op = MessageBox.Show("Apaga " + p.nome, "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if(op == DialogResult.Yes)
+            {
+                controle.ProdutoDB tabela = new controle.ProdutoDB();
+                tabela.excluir(p.idproduto);
+                bs.RemoveCurrent();
+                bs.ResetBindings(false);
+            }
+        }
     }
 }
