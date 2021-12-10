@@ -22,6 +22,17 @@ namespace projetoRestaurante.controle
             }
         }
 
+        public object pesquisarNome(string nome)
+        {
+            using(var banco = new modelo.restaurantedbEntidades()) 
+            {
+                banco.Database.Connection.ConnectionString = con;
+
+                var query = from linhas in banco.produto where linhas.nome.StartsWith(nome) select linhas;
+                return query.ToList();
+            }
+        }
+
         public void inserir(modelo.produto reg)
         {
             using (var banco = new modelo.restaurantedbEntidades())

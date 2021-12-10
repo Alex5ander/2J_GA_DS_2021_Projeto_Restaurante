@@ -38,12 +38,12 @@ namespace projetoRestaurante.visao
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.dgvList = new System.Windows.Forms.DataGridView();
+            this.dgvLista = new System.Windows.Forms.DataGridView();
             this.pnTop.SuspendLayout();
             this.pnBottom.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.SuspendLayout();
             // 
             // pnTop
@@ -58,7 +58,7 @@ namespace projetoRestaurante.visao
             // 
             // pnBottom
             // 
-            this.pnBottom.Controls.Add(this.dgvList);
+            this.pnBottom.Controls.Add(this.dgvLista);
             this.pnBottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnBottom.Location = new System.Drawing.Point(0, 229);
             this.pnBottom.Name = "pnBottom";
@@ -87,6 +87,7 @@ namespace projetoRestaurante.visao
             this.btnPesquisar.Text = "PESQUISAR";
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // panel1
             // 
@@ -129,17 +130,17 @@ namespace projetoRestaurante.visao
             this.txtNome.Size = new System.Drawing.Size(498, 21);
             this.txtNome.TabIndex = 4;
             // 
-            // dgvList
+            // dgvLista
             // 
-            this.dgvList.AllowUserToAddRows = false;
-            this.dgvList.AllowUserToDeleteRows = false;
-            this.dgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvList.Location = new System.Drawing.Point(0, 0);
-            this.dgvList.Name = "dgvList";
-            this.dgvList.ReadOnly = true;
-            this.dgvList.Size = new System.Drawing.Size(747, 221);
-            this.dgvList.TabIndex = 0;
+            this.dgvLista.AllowUserToAddRows = false;
+            this.dgvLista.AllowUserToDeleteRows = false;
+            this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvLista.Location = new System.Drawing.Point(0, 0);
+            this.dgvLista.Name = "dgvLista";
+            this.dgvLista.ReadOnly = true;
+            this.dgvLista.Size = new System.Drawing.Size(747, 221);
+            this.dgvLista.TabIndex = 0;
             // 
             // FormPesquisarProduto
             // 
@@ -161,7 +162,7 @@ namespace projetoRestaurante.visao
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -176,6 +177,6 @@ namespace projetoRestaurante.visao
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnBottom;
-        private System.Windows.Forms.DataGridView dgvList;
+        private System.Windows.Forms.DataGridView dgvLista;
     }
 }

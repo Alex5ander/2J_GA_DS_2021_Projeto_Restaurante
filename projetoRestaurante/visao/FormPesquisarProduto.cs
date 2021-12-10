@@ -12,9 +12,17 @@ namespace projetoRestaurante.visao
 {
     public partial class FormPesquisarProduto : Form
     {
+        internal int Cod {get; set;}
         public FormPesquisarProduto()
         {
             InitializeComponent();
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            controle.ProdutoDB tabela = new controle.ProdutoDB();
+            dgvLista.DataSource = tabela.pesquisarNome(txtNome.Text);
+            dgvLista.AutoResizeColumns();
         }
     }
 }
